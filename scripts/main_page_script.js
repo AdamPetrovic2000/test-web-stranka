@@ -136,8 +136,9 @@ function next() {
   );
   if (currentIndex + 1 > imgArray.length - 1) {
     currentIndex = 0;
-    modalImg.src = imgArray[currentIndex++].src;
-    imgDescription.innerHTML = imgArray[currentIndex++].alt;
+    modalImg.src = imgArray[currentIndex].src;
+    imgDescription.innerHTML = imgArray[currentIndex].alt;
+    currentIndex++;
   } else {
     modalImg.src = imgArray[currentIndex + 1].src;
     imgDescription.innerHTML = imgArray[currentIndex + 1].alt;
@@ -150,8 +151,9 @@ function previous() {
   );
   if (currentIndex - 1 < 0) {
     currentIndex = imgArray.length - 1;
-    modalImg.src = imgArray[currentIndex--].src;
-    imgDescription.innerHTML = imgArray[currentIndex--].alt;
+    modalImg.src = imgArray[currentIndex].src;
+    imgDescription.innerHTML = imgArray[currentIndex].alt;
+    currentIndex--;
   } else {
     modalImg.src = imgArray[currentIndex - 1].src;
     imgDescription.innerHTML = imgArray[currentIndex - 1].alt;
