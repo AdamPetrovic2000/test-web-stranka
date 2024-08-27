@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LH - Elektronik Servis</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="description" content="LH - Elektronik Servis">
+    <meta name="keywords"
+        content="Servis elektroniky, Servis elektro, LH - Elektronik Servis, Eletronik servis, electro Servis, elektro servis">
+    <meta name="author" content="Adam Petrovič">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="build.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <script defer src="scripts/main_page_script.js"></script>
+    <script defer src="https://kit.fontawesome.com/1409ec8ccf.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="w-full h-full overflow-x-hidden leading-normal tracking-normal text-white gradient"
+    style="font-family: 'Source Sans Pro', sans-serif;">
+    <!--Nav -->
+    <section id="domov" data-index="0">
+        <nav id="header" class="fixed w-full z-50 top-0 text-white">
+            <div class="container mx-auto flex flex-wrap items-center justify-between mt-0 py-2 w-full">
+                <div class="pl-4 flex items-center">
+                    <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+                        href="#">
+                        <div class="flex">
+                            <img id="logo-icon" class="lg:h-10 h-8 mr-2" src="img/logo_PC_white.svg" alt="">
+                            <h1>LH - Elektronik Servis</h1>
+                        </div>
+                    </a>
+                </div>
+                <div class="block lg:hidden pr-4">
+                    <button id="nav-toggle"
+                        class="flex items-center p-1 text-blue-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                        <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Menu</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
+                    id="nav-content">
+                    <ul id="nav-bar-items" class="list-reset lg:flex justify-end flex-1 items-center">
+                        <li class="mr-3 relative">
+                            <a class="inline-block before:content-[''] before:mb-0 hover:before:bg-black active:before:bg-black before:h-[2px] before:w-full before:absolute before:bottom-0 before:left-0  text-black no-underline hover:text-gray-800 active:text-gray-800 py-2 px-4"
+                                href="#domov">Domov</a>
+                        </li>
+                        <li class="mr-3 relative">
+                            <a class="inline-block before:content-[''] before:mb-0 hover:before:bg-black active:before:bg-black before:h-[2px] before:w-full  before:absolute before:bottom-0 before:left-0 text-black no-underline hover:text-gray-800 active:text-gray-800 py-2 px-4"
+                                href="#o-nas">O nás</a>
+                        </li>
+                        <li class="mr-3 relative">
+                            <a class="inline-block before:content-[''] before:mb-0 hover:before:bg-black active:before:bg-black before:h-[2px] before:w-full  before:absolute before:bottom-0 before:left-0 text-black no-underline hover:text-gray-800 active:text-gray-800 py-2 px-4"
+                                href="#novinky">Novinky</a>
+                        </li>
+                        <li class="mr-3 relative">
+                            <a class="inline-block before:content-[''] before:mb-0 hover:before:bg-black active:before:bg-black before:h-[2px] before:w-full  before:absolute before:bottom-0 before:left-0 text-black no-underline hover:text-gray-800 active:text-gray-800 py-2 px-4"
+                                href="#kontakt">Kontakt</a>
+                        </li>
+                        <li class="mr-3 relative">
+                            <a class="inline-block before:content-[''] before:mb-0 hover:before:bg-black active:before:bg-black before:h-[2px] before:w-full  before:absolute before:bottom-0 before:left-0 text-black no-underline hover:text-gray-800 active:text-gray-800 py-2 px-4"
+                                href="#recenzie">Recenzie</a>
+                        </li>
+                        <li class="mr-3 relative">
+                            <a class="inline-block before:content-[''] before:mb-0 hover:before:bg-black active:before:bg-black before:h-[2px] before:w-full  before:absolute before:bottom-0 before:left-0 text-black no-underline hover:text-gray-800 active:text-gray-800 py-2 px-4"
+                                href="#galeria">Galéria</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+        </nav>
+    </section>
+
+
+    <!--Hero-->
+    <header class="pt-24">
+        <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+            <!--Left Col-->
+            <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+                <div class="w-full mb-2">
+                    <img class="lg:scale-[85%] md:scale-100 scale-[85%]" src="img/logo_white_not_underlined.svg" alt="">
+                </div>
+                <p class="lg:ml-6 leading-normal text-2xl mb-8">
+                    Rýchlosť, kvalita a vaša spokojnosť sú pre nás prvoradé, preto sa postaráme o to, aby vaše
+                    zariadenia
+                    fungovali bezchybne a bez zbytočných starostí!
+                </p>
+            </div>
+            <!--Right Col-->
+            <div class="w-full md:w-3/5 py-6 text-center flex justify-center ">
+                <img class="w-full md:w-3/5 my-hidden my-left" src="img/hero.svg" />
+            </div>
+        </div>
+    </header>
+    <!-- vlnka -->
+    <div class="relative -mt-12 lg:-mt-24">
+        <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path
+                        d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+                        opacity="0.100000001"></path>
+                    <path
+                        d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                        opacity="0.100000001"></path>
+                    <path
+                        d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+                        id="Path-4" opacity="0.200000003"></path>
+                </g>
+                <g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path
+                        d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z">
+                    </path>
+                </g>
+            </g>
+        </svg>
+    </div>
+
+
+
+    <main>
+        <!-- about -->
+        <section class="bg-white border-b py-8 overflow-hidden" id="o-nas">
+
+            <h2 data-index="1" class="w-full mt-8 text-5xl font-bold leading-tight text-center text-gray-800">
+                O nás
+            </h2>
+            <div class="w-full mb-4">
+                <div class="h-1 mx-auto max-w-[100vw] gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+            </div>
+
+            <div class="container max-w-5xl mx-auto">
+                <!-- o nas opis/(keci) -->
+                <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+                    <div class=" align-middle w-full sm:w-1/2 p-6 mt-6 md:order-1 order-2">
+                        <h2 class="lg:text-3xl text-2xl text-gray-800 font-bold leading-none mb-3">
+                            Kto sme a čo ponúkame?
+                        </h2>
+                        <p class="text-gray-600 mb-2">
+                            Sme servis elektroniky s viac než 25-ročnými skúsenosťami v odbore. Naša firma sa
+                            nachádza v
+                            centre mesta Vrútky, len pár krokov od autobusovej a vlakovej stanice. Ponúkame rýchle a
+                            cenovo dostupné riešenia pre opravu vašej poškodenej elektroniky a prístrojov. Našou
+                            prioritou je poskytovať kvalitné služby za rozumnú cenu, pričom využívame inovatívny
+                            prístup. Vykonávame spoľahlivé opravy s použitím výhradne nových a originálnych
+                            náhradných
+                            dielov. S pomocou špičkového vybavenia a našich odborných znalostí dokážeme problémy
+                            diagnostikovať v krátkom čase a zabezpečiť rýchlu opravu.</p>
+                        <p class="text-gray-600 mb-2">
+                            S postupom času sme rozšírili našu ponuku služieb. Okrem opravy spotrebnej elektroniky
+                            sa zameriavame aj na poskytovanie poradenských služieb, predaj originálnych náhradných
+                            dielov, diaľkových ovládačov,
+                            elektrosúčiastok a doplnkového tovaru.
+                        </p>
+                    </div>
+                    <div class="md:order-2 order-1 w-full sm:w-1/2 p-6">
+                        <img src="img/about1.svg" alt="O nas"
+                            class=" w-full h-full mx-auto rounded-lg my-hidden my-right">
+                    </div>
+                </div>
+            </div>
+            <!-- o nas poskytovane sluzby -->
+            <div class="container max-w-5xl mx-auto">
+                <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+                    <div class="w-full sm:w-1/2 p-6 flex items-center">
+                        <img src="img/about2.svg" alt="ponake služby"
+                            class="w-full mx-auto h-full rounded-lg my-hidden my-left">
+                    </div>
+                    <div class="w-full sm:w-1/2 p-6 mt-6 align-middle">
+                        <h2 class="lg:text-3xl text-2xl text-gray-800 font-bold leading-none mb-3">
+                            Čo opravujeme a poskytujeme?
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                        <ul class=" text-gray-600 px-5 w-full">
+                            <li class="lg:my-[8px] md:my-[4px] my-[8px] flex gap-2 items-center">
+                                <img src="img/icons/tv.png" alt="Obrázok CRT Televizora " class="">
+                                CRT, Plazmové, LCD, LED, OLED televízory
+                            </li>
+
+                            <li class="lg:my-[8px] md:my-[4px] my-[8px] flex gap-2 items-center">
+                                <img src="img/icons/pc.png" alt="Obrázok Počitača ">
+                                PC monitory, Počítače, Notebooky (software/hardware)
+                            </li>
+                            <li class="lg:my-[8px] my-[4px] flex gap-2 items-center">
+                                <img src="img/icons/hifi.png" alt="Obrázok Hi-Fi ">
+                                Audio systémy, Reproduktory, Hi-Fi veže, Rádiomagnetofóny, Slúchadlá
+                            </li>
+                            <li class="my-[4px] flex gap-2 items-center">
+                                <img src="img/icons/DVD.png" alt="Obrázok DVDčka ">
+                                <span>Audio systémy, Reproduktory, Hi-Fi veže, Rádiomagnetofóny, Slúchadlá</span>
+                            </li>
+                            <li class="my-[4px] flex gap-2 items-center">
+                                <img src="img/icons/hodinky.png" alt="Obrázok hodiniek ">
+                                Výmena batérii a skracovanie remienkov v náramkových hodinkách
+                            </li>
+                            <li class="my-[4px] flex gap-2 items-center">
+                                <img src="img/icons/mikrovlnka.png" alt="Obrázok Mikrovlnnej rúry ">
+                                Elektronické hračky, Mikrovlnne rúry, Vysávače, Ohrievače
+                            </li>
+                            <li class="my-[4px] flex gap-2 items-center">
+                                <img src="img/icons/health.png" alt="Obrázok zdravia ">
+                                Biolampy ZEPTER a BIOPTRON a iné elektronické zdravotnícke pomôcky
+                            </li>
+                            <li class="my-[4px] flex gap-2 items-center">
+                                <img src="img/icons/ovladac.png" alt="Obrázok dialkového ovladača ">
+                                Servis a predaj diaľkových ovládačov k spotrebnej elektronike (na
+                                počkanie)
+                            </li>
+                            <li class="my-[4px] flex gap-2 items-center">
+                                <img src="img/icons/vrtacka.png" alt="Obrázok vrtačky ">
+                                Autorizovaný servis magnetnických vŕtačiek KARNASCH
+                            </li>
+                            <li class="my-[4px] flex gap-2 items-center">
+                                <img src="img/icons/tlaciaren.png" alt="Obrázok tlačiarne ">
+                                Predaj a servis tlačiarni a kopírovacích zariadení značky BROTHER
+                            </li>
+                            <li class="my-[4px] flex gap-2 items-center">
+                                <img src="img/icons/kabel.png" alt="Obrázok USB kabla ">
+                                Predaj náhradných dielov a elektro súčiastok, príslušenstva a káblov
+                                všetkých druhov
+                            </li>
+                            <li class="lg:my-[8px] md:my-[4px] my-[8px] flex gap-2 items-center">
+                                <img src="img/icons/tlac.png" alt="Obrázok tlačenia dokumenotov ">
+                                Kopirovanie a tlač dokumentov
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- novinky -->
+        <section id="novinky" class="bg-white border-b py-8">
+            <div class="container mx-auto px-2 pt-8 p- text-gray-800 h-full ">
+                <h2 data-index="2"
+                    class="w-full max-w-[100vw] mt-8 text-5xl font-bold leading-tight text-center text-gray-800">
+                    Novinky
+                </h2>
+                <div class="w-full mb-10">
+                    <div class="h-1 mx-auto max-w-[100vw] gradient w-64 opacity-25 mb-4 py-0 rounded-t"></div>
+                </div>
+                <div class="my-hidden my-left mx-8">
+                    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                    <div class="elfsight-app-7defa045-3415-44fc-ae3c-8bc28e5c127b" data-elfsight-app-lazy></div>
+                </div>
+        </section>
+
+        <!--kontakt -->
+        <section class=" bg-gray-100 pt-2" id="kontakt">
+            <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+                <h2 data-index="3" class="w-full mt-8 text-5xl font-bold leading-tight text-center text-gray-800">
+                    Kontakt
+                </h2>
+                <div class="w-full mb-4">
+                    <div class="h-1 mx-auto max-w-[100vw] gradient w-64 opacity-25 mb-4 py-0 rounded-t"></div>
+                </div>
+
+
+                <div class="container md:mx-10 m-2 text-gray-700 md:text-lg text-base mb-8">
+
+
+                    <div class="my-hidden my-left w-full h-full bg-white 
+                    shadow-md rounded-lg grid lg:grid-cols-3 grid-cols-1 md:m-0 px-4"
+                        style="place-items: start center;">
+
+                        <div class="mt-10 mb-5 flex flex-col">
+                            <div class="flex items-center m-1">
+                                <i class="fa-regular fa-address-book md:text-5xl text-4xl mr-2"></i>
+                                <div class="font-bold text-3xl">Adressné údaje</div>
+                            </div>
+                            <div class="lg:ml-16 lg:block flex flex-col items-center">
+                                <div>LH – ELEKTRONIK SERVIS</div>
+                                <div> Karola Kalocsaya 4</div>
+                                <div>038 61 Vrútky, Slovensko</div>
+                            </div>
+                        </div>
+
+                        <div class="mt-10 mb-5 flex flex-col">
+                            <div class="flex items-center m-1">
+                                <i class="fa-regular fa-envelope md:text-5xl text-4xl mr-2"></i>
+                                <div class="font-bold text-3xl">Kontaktné údaje</div>
+                            </div>
+                            <div class="lg:ml-16 lg:block flex flex-col items-center">
+                                <div><strong>Tel. číslo:</strong> +421 905 503 357</div>
+                                <div><strong>Email:</strong> hajaslubomir@gmail.com</div>
+                            </div>
+                        </div>
+
+                        <div class="mt-10 mb-5 flex flex-col">
+                            <div class="flex items-center m-1">
+                                <i class="fa-regular fa-clock md:text-5xl text-4xl mr-2"></i>
+                                <div class="font-bold text-3xl">Otvarácie hodiny</div>
+                            </div>
+                            <div class="lg:ml-16 lg:block flex flex-col items-center">
+                                <div>Pondelok - Piatok</div>
+                                <div>9:00 - 17:00</div>
+                                <div>Po telefonickej dohode non-stop</div>
+                            </div>
+                        </div>
+
+                        <div class="text-black flex justify-center my-10 w-full lg:col-span-3">
+                            <a target="_blank" href="https://www.facebook.com/lhelektronikservis"
+                                class="md:mx-10 mx-6 hover:opacity-70 hover:scale-110 active:opacity-70 active:scale-110 transition-transform"><img
+                                    src="img/icons/fb.png" alt="facebook-icon"
+                                    class="md:w-[48px] md:h-[48px] w-[42px] h-[42px]"></a>
+                            <a target="_blank" href="https://www.instagram.com/lhelektronikservis/"
+                                class="md:mx-10 mx-6 hover:opacity-70 hover:scale-110 active:opacity-70 active:scale-110 transition-transform"><img
+                                    src="img/icons/ig.png" alt="instagram-icon"
+                                    class="md:w-[48px] md:h-[48px] w-[42px] h-[42px]"></a>
+                            <a target="_blank" href="https://www.messenger.com/e2ee/t/7336386996441186/"
+                                class="md:mx-10 mx-6 hover:opacity-70 hover:scale-110 active:opacity-70 active:scale-110 transition-transform"><img
+                                    src="img/icons/msg.png" alt="massenger-icon"
+                                    class="md:w-[48px] md:h-[48px] w-[42px] h-[42px]"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container grid lg:grid-cols-2 grid-cols-1 gap-10 md:mx-10">
+                    <div class="lg:order-1 order-2">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1690.3361977109846!2d18.92253897245526!3d49.11468681512704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471457546bddcf13%3A0xbb0083460025fce0!2sLH%20elektronik%20servis%20-%20opravov%C5%88a%20telev%C3%ADzorov!5e1!3m2!1ssk!2ssk!4v1723203193917!5m2!1ssk!2ssk"
+                            width="100%" height="" style="border:0;" allowfullscreen="true" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="md:h-[450px] h-80 md:rounded-lg my-hidden my-left"></iframe>
+                    </div>
+                    <div class="lg:order-2">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!4v1723924807327!6m8!1m7!1swHOhKFaQHmhniCNI-wb_-w!2m2!1d49.11432671491152!2d18.92317505512077!3f327.86302156329725!4f-2.7793547886684706!5f1.7210752223855117"
+                            width="100%" style="border:0;" allowfullscreen="true" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="md:h-[450px] h-80 md:rounded-lg my-hidden my-right"></iframe>
+                    </div>
+                </div>
+        </section>
+
+        <!-- recenzie -->
+        <section class="bg-white border-b py-8" id="recenzie">
+            <div class="container mx-auto px-2 pt-8 text-gray-800">
+                <h2 data-index="4" class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+                    Recenzie
+                </h2>
+                <div class="w-full mb-4">
+                    <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+                </div>
+                <div class="my-hidden my-left mx-8 h-full">
+                    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                    <div class="elfsight-app-016bcc28-9e61-40b2-af70-8198b25570c2" data-elfsight-app-lazy></div>
+                    <!-- <div class=" bg-white absolute w-full h-12 mx-0 bottom-[1%] z-10"></div> -->
+                </div>
+            </div>
+        </section>
+        <!-- galeria -->
+        <section class="bg-gray-100 pt-2" id="galeria">
+            <div class="container mx-auto mt-8 px-2 pt-4 pb-12 text-gray-800">
+                <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+                    Galéria
+                </h2>
+                <div class="w-full mb-12">
+                    <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mx-10">
+                    <img data-index="5"
+                        class="my-hidden cursor-pointer my-query-selector rounded-lg hover:scale-105 active:scale-105 active:transition-transform active:duration-300 shadow-md hover:transition-transform hover:duration-300"
+                        src="img/galeria/oprava_radia.jpg" alt="Oprava rádia">
+
+                    <img class="my-hidden cursor-pointer my-query-selector  rounded-lg hover:scale-105 active:scale-105 active:transition-transform active:duration-300 shadow-md hover:transition-transform hover:duration-300"
+                        src="img/galeria/oprava_televizorov.jpg" alt="Oprava televizorov">
+
+
+                    <img class="row-span-2 my-hidden cursor-pointer my-query-selector rounded-lg hover:scale-105 active:scale-105 active:transition-transform active:duration-300 shadow-md hover:transition-transform hover:duration-300"
+                        src="img/galeria/oprava_ovladača.jpg" alt="Oprava dialkového ovládača <br> aj na počkanie">
+
+
+                    <img class="row-span-2 my-hidden cursor-pointer my-query-selector rounded-lg hover:scale-105 active:scale-105 active:transition-transform active:duration-300 shadow-md hover:transition-transform hover:duration-300"
+                        src="img/galeria/predaj_ovladačov.jpg" alt="Predaj dialkových ovládačov">
+
+
+                    <img class="row-span-2 my-hidden cursor-pointer my-query-selector rounded-lg hover:scale-105 active:scale-105 active:transition-transform active:duration-300 shadow-md hover:transition-transform hover:duration-300"
+                        src="img/galeria/miesto_.jpg" alt="Poloha nášho servisu">
+
+
+                    <img class="my-hidden cursor-pointer my-query-selector rounded-lg hover:scale-105 active:scale-105 active:transition-transform active:duration-300 shadow-md hover:transition-transform hover:duration-300"
+                        src="img/galeria/predajna.png" alt="Vstup do servisu">
+
+
+                </div>
+        </section>
+
+    </main>
+
+    <!-- Img modal -->
+    <div id="modal-window-img"
+        class="hidden fixed w-full h-full z-50 bg-[rgba(0,0,0,0.8)] top-0 right-0 items-center justify-center">
+        <div class="shadow dark:bg-gray-700 opacity-100 grid modal-animation">
+            <button id="modal-close-img" type="button" style="grid-area: 1/1;"
+                class=" mr-3 mt-3 text-white bg-transparent hover:bg-gray-200 hover:text-gray-900 active:bg-gray-200 active:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white z-10">
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+            </button>
+            <div style="grid-area: 1/1;" class="grid">
+                <!-- img-->
+                <img style="grid-area: 1/1;" id="modal-img"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt=""
+                    class="rounded-lg max-w-[90vw] max-h-[90vh] ">
+                <!-- TO DO -->
+                <div style="grid-area: 1/1" class=" md:text-3xl text-2xl flex justify-center items-end">
+                    <span id="img-description" class="text-wrap w-full text-center bg-[#11111180] m-2 rounded-lg p-2">
+                        /* Pracuje sa na popise asdsadasdadas */
+                    </span>
+                </div>
+
+                <div style=" grid-area: 1/1;" class=" flex items-center justify-between ">
+                    <!-- left arrow -->
+                    <div id="previous" class="rounded-full text-transparent hover:transition-all active:transition-all ease-in-out duration-[0.3s] hover:cursor-pointer
+                      bg-[#11111180] hover:bg-[#111111] active:bg-[#111111] hover:scale-110 m-3 w-[50px] h-[50px] z-10"
+                        style="fill: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px 0px;">
+                        <div class="p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8.96 1.96a1 1 0 0 1 1.497 1.32l-.083.094L5.747 8l4.627 4.626a1 1 0 0 1 .083 1.32l-.083.094a1 1 0 0 1-1.32.084l-.094-.084-5.334-5.333a1 1 0 0 1-.083-1.32l.083-.094L8.96 1.96Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- right arrow -->
+                    <div id="next" class="rounded-full text-transparent hover:transition-all active:transition-all ease-in-out duration-[0.3s] hover:cursor-pointer
+                    bg-[#11111180] hover:bg-[#111111] active:bg-[#111111] hover:scale-110 m-3 w-[50px] h-[50px] z-10"
+                        style="fill: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px 0px;">
+                        <div class="p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M7.04 1.96a1 1 0 0 0-1.497 1.32l.083.094L10.253 8l-4.627 4.626a1 1 0 0 0-.083 1.32l.083.094a1 1 0 0 0 1.32.084l.094-.084 5.334-5.333a1 1 0 0 0 .083-1.32l-.083-.094L7.04 1.96Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- cookies banner -->
+    <section id="cookies" class="hidden fixed bottom-0 w-full bg-gray-50 dark:bg-gray-800">
+        <div class="container px-4 py-3 mx-auto flex lg:flex-row flex-col items-center lg:justify-between ">
+            <p class="text-gray-600 dark:text-gray-300">
+                Kliknutím na tlačidlo „Súhlasim“ súhlasíte s ukladaním súborov cookie do vášho zariadenia na
+                skvalitnenie poskytovaného obsahu a užívateľského komfortu, analýzu používania stránky a pomoc pri
+                marketingových aktivitách. Viac informácií nájdete <a target="_blank"
+                    href="ochrana-osobnych-udajov.html" class="hover:text-black hover:font-bold">TU</a>.
+            </p>
+            <div class="flex items-center mt-6 gap-x-4 lg:gap-x-8 shrink-0 lg:mt-0">
+                <button id="cookie-button"
+                    class=" text-sm w-full md:w-auto font-medium bg-gray-900 rounded-lg hover:bg-gray-900/80 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none">
+                    Súhlasim
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- dať preč len kvoli tailwind buildu
+    <div class="before:bg-black"></div> -->
+    <!-- footer -->
+    <svg viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+                <g class="wave" fill="#f3f4f6">
+                    <path
+                        d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z">
+                    </path>
+                </g>
+                <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
+                    <g
+                        transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
+                        <path
+                            d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+                            opacity="0.100000001"></path>
+                        <path
+                            d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                            opacity="0.100000001"></path>
+                        <path
+                            d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+                            opacity="0.200000003"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </svg>
+    <footer class="container mx-auto text-center py-6 mb-12" data-index="-1">
+        <div class="container mx-auto px-8 w-full flex flex-col md:flex-row py-6 md:justify-evenly">
+
+            <div class="mb-6 text-black md:flex-grow-[1]">
+                <a class="text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl mr-6 flex flex-col items-center"
+                    href="#">
+                    LH - Elektronik servis
+                    <img src="img/logo_PC_white.svg" alt="" class="w-1/3 h-1/3">
+                </a>
+            </div>
+
+            <div class="md:flex-grow-[3]">
+                <h2 class="uppercase text-gray-500 md:mb-4 md:text-left">
+                    Kontaktné údaje
+                </h2>
+                <ul class="list-reset md:text-left mb-6">
+                    <li class="space-y-2 inline-block mr-2 md:block md:mr-0 text-gray-800">
+                        <div>Firma: LH – ELEKTRONIK SERVIS</div>
+                        <div>Adresa: Karola Kalocsaya 4</div>
+                        <div>038 61 Vrútky, Slovensko</div>
+                        <div>Tel. číslo: +421 905 503 357</div>
+                        <div>Email: hajaslubomir@gmail.com</div>
+                        <div>Pondelok až piatok</div>
+                        <div>od 9:00 do 17:00</div>
+                        <div>Po telefonickej dohode non-stop</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="md:flex-grow-[3]">
+                <h2 class="uppercase text-gray-500 md:mb-4 md:text-left">
+                    Socialné siete
+                </h2>
+                <ul class="list-reset md:text-left mb-6">
+                    <li class="inline-block mr-2 md:block md:mr-0">
+                        <a target="_blank" href="https://www.facebook.com/lhelektronikservis"
+                            class="no-underline hover:underline text-gray-800 hover:text-pink-500">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                        <a target="_blank" href="https://www.instagram.com/lhelektronikservis/"
+                            class="no-underline hover:underline text-gray-800 hover:text-pink-500">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                        <a target="_blank" href="https://www.messenger.com/e2ee/t/7336386996441186/"
+                            class="no-underline hover:underline text-gray-800 hover:text-pink-500">
+                            Messenger
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="md:flex-grow-[3]">
+                <h2 class="uppercase text-gray-500 md:mb-4 md:text-left">
+                    Firma
+                </h2>
+                <ul class="list-reset md:text-left">
+                    <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                        <a href="#domov" class="no-underline hover:underline text-gray-800 hover:text-pink-500">
+                            Domov
+                        </a>
+                    </li>
+                    <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                        <a href="#o-nas" class="no-underline hover:underline text-gray-800 hover:text-pink-500">
+                            O nás
+                        </a>
+                    </li>
+                    <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                        <a href="#novinky" class="no-underline hover:underline text-gray-800 hover:text-pink-500">
+                            Novinky
+                        </a>
+                    </li>
+                    <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                        <a href="#kontakt" class="no-underline hover:underline text-gray-800 hover:text-pink-500">
+                            Kontakt
+                        </a>
+                    </li>
+                    <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                        <a href="#recenzie" class="no-underline hover:underline text-gray-800 hover:text-pink-500">
+                            Recenzie
+                        </a>
+                    </li>
+                    <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                        <a href="#galeria" class="no-underline hover:underline text-gray-800 hover:text-pink-500">
+                            Galéria
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="text-gray-500 space-y-1 flex flex-col">
+            <a href="https://www.freepik.com/">
+                Pictures designed by Freepik - www.freepik.com
+            </a>
+            <div>
+                &copy; LH - Elektronik servis
+                <span id="time"></span>
+            </div>
+            <a href="https://mojastranka123.free.nf/">
+                Website created by Adam Petrovič
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
